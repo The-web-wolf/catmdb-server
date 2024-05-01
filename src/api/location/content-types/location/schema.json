@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "locations",
+  "info": {
+    "singularName": "location",
+    "pluralName": "locations",
+    "displayName": "Locations",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "business_status": {
+      "type": "string",
+      "default": "OPERATIONAL"
+    },
+    "formatted_address": {
+      "type": "string",
+      "required": true
+    },
+    "place_id": {
+      "type": "string",
+      "required": true
+    },
+    "lat": {
+      "required": true,
+      "type": "float"
+    },
+    "lng": {
+      "type": "float",
+      "required": true
+    },
+    "fee": {
+      "type": "decimal",
+      "required": true
+    }
+  }
+}

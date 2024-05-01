@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "fees",
+  "info": {
+    "singularName": "fee",
+    "pluralName": "fees",
+    "displayName": "fee",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "place_id": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "place_name": {
+      "type": "string",
+      "required": true
+    },
+    "amount": {
+      "type": "float",
+      "required": true,
+      "unique": false
+    },
+    "currency": {
+      "type": "string",
+      "default": "$",
+      "required": true,
+      "maxLength": 6
+    },
+    "User": {
+      "type": "string",
+      "required": true,
+      "default": "Anonymous Nomad"
+    }
+  }
+}
